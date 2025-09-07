@@ -1,0 +1,16 @@
+{
+    "name": "tg-chess-miniapp-prototype",
+    "version": "1.0.0",
+    "description": "Minimal Telegram WebApp multiplayer chess prototype (vanilla JS + Node.js + Socket.IO)",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "bot": "node bot.js"
+    },
+    "dependencies": {
+        "chess.js": "^0.13.1",
+        "express": "^4.18.2",
+        "node-telegram-bot-api": "^0.66.0",
+        "socket.io": "^4.7.2"
+    }
+}

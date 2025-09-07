@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Telegram Chess MiniApp — Prototype</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Chess — Mini App Prototype</h1>
+      <div id="status">Connecting...</div>
+    </header>
+
+    <main>
+      <div id="board" aria-label="Chess board"></div>
+      <aside>
+        <div id="gameInfo">
+          <div>Color: <span id="color">—</span></div>
+          <div>Turn: <span id="turn">—</span></div>
+          <div id="inCheck" style="display:none;color:crimson;">Check!</div>
+        </div>
+        <div id="controls">
+          <button id="resignBtn">Resign</button>
+          <button id="requestStateBtn">Refresh State</button>
+        </div>
+        <div id="moves">
+          <h3>Moves</h3>
+          <ol id="moveList"></ol>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <small>Local prototype — refresh to reconnect. For Telegram mini app testing use the bot's Web App button.</small>
+    </footer>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/client.js"></script>
+</body>
+</html>
